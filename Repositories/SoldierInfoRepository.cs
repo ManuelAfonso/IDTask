@@ -27,6 +27,8 @@ namespace Repositories
 
             var soldiers = _soldierInfoContext
                 .Soldiers
+                .AsNoTracking()
+                .OrderBy(x => x.Id)
                 .Skip(skip)
                 .Take(pageSize);
 
@@ -43,6 +45,7 @@ namespace Repositories
         {
             var soldiers = _soldierInfoContext
                 .Soldiers
+                .AsNoTracking()
                 .Where(s => s.Id == soldierId);
 
             soldiers = ApplyProjection(projection, soldiers);

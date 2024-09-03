@@ -20,6 +20,7 @@ namespace Repositories
         {
             var location = await _soldierLocationContext
                 .SoldierLocations
+                .AsNoTracking()
                 .Where(s => s.Active && s.SoldierId == soldierId)
                 .FirstOrDefaultAsync();
 
@@ -51,6 +52,7 @@ namespace Repositories
         {
             var locations = await _soldierLocationContext
                 .SoldierLocations
+                .AsNoTracking()
                 .Where(s => 
                     s.Active && 
                     s.Latitude >= upperLeftLocation.Latitude &&
