@@ -1,0 +1,13 @@
+Database: indexes
+Separate Mappers and Validators
+Use configuration for threshold, default page size
+Model and DTO for paged results
+GetManyLocations with one call (with a configured limit)
+
+Message broker consumer and publisher
+UI
+End to end test
+
+Complete unit tests
+Use attributes in EF
+DTOs for Repository<->Service (instead of using models directly)
