@@ -6,7 +6,8 @@ GetManyLocations with one call (with a configured limit)
 
 Message broker consumer and publisher
 UI
-End to end test
+End to end test ouside code behind
+Change dependency in UI - mistake
 
 Complete unit tests
 Use attributes in EF

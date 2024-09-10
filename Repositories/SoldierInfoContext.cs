@@ -19,6 +19,8 @@ namespace Repositories
         {
             base.OnModelCreating(modelBuilder);
 
+            //modelBuilder.HasDefaultSchema("SoldierInfo");
+
             // SoldierInfo schema configurations
             modelBuilder.Entity<Rank>()
                 .ToTable("Rank", "SoldierInfo")
